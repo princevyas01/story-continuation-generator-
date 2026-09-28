@@ -1,0 +1,19 @@
+# Core Deep Learning Framework
+tensorflow==2.21.0
+keras==3.15.1
+
+# Scientific Computing & Data Processing
+numpy>=1.26.0,<3.0.0
+pandas>=2.2.0
+pyyaml>=6.0.1
+psutil>=5.9.8
+requests>=2.31.0
+
+# Visualization & Presentation
+matplotlib>=3.8.0
+
+# User Interface
+streamlit>=1.35.0
+
+# Testing & Quality Assurance
+pytest>=8.1.0

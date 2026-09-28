@@ -1,0 +1,70 @@
+project:
+  name: "Story Continuation Generator Using LSTM"
+  version: "1.0.0"
+  random_seed: 42
+
+system:
+  device: "CPU"
+  num_threads: 8
+
+data:
+  raw_dir: "data/raw"
+  interim_dir: "data/interim"
+  processed_dir: "data/processed"
+  manifest_path: "data/manifests/dataset_manifest.json"
+  train_split: 0.80
+  val_split: 0.10
+  test_split: 0.10
+  min_doc_words: 30
+
+tokenization:
+  max_vocab_size: 10000
+  sequence_length: 50
+  pad_token: "<PAD>"
+  unk_token: "<UNK>"
+  start_token: "<START>"
+  end_token: "<END>"
+  vocab_path: "artifacts/tokenizer_vocab.json"
+
+model:
+  type: "word_lstm"
+  embedding_dim: 128
+  lstm_units: 256
+  num_layers: 2
+  dropout_rate: 0.2
+  learning_rate: 0.002
+  clipnorm: 1.0
+
+training:
+  batch_size: 64
+  epochs: 15
+  smoke_epochs: 2
+  smoke_sample_docs: 5
+  early_stopping_patience: 3
+  reduce_lr_patience: 2
+  reduce_lr_factor: 0.5
+  min_lr: 0.0001
+  best_model_path: "models/best/story_lstm.keras"
+  final_model_path: "models/final/story_lstm_final.keras"
+  checkpoint_dir: "models/checkpoints"
+
+generation:
+  default_temperature: 0.8
+  default_top_k: 40
+  default_top_p: 0.90
+  default_max_new_tokens: 50
+  repetition_penalty: 1.15
+  min_temperature: 0.1
+  max_temperature: 2.0
+
+artifacts:
+  metrics_json: "artifacts/metrics/metrics.json"
+  metrics_csv: "artifacts/metrics/metrics.csv"
+  loss_curve_png: "artifacts/plots/loss_curve.png"
+  metric_plot_png: "artifacts/plots/metric_plot.png"
+  sample_generations_md: "artifacts/samples/sample_generations.md"
+  sample_generations_json: "artifacts/samples/sample_generations.json"
+  human_eval_sheet_csv: "artifacts/reports/human_evaluation_sheet.csv"
+  training_report_md: "artifacts/reports/training_report.md"
+  model_summary_txt: "artifacts/model_summary.txt"
+  config_used_yaml: "artifacts/config_used.yaml"
