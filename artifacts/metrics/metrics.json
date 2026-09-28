@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-09-28T19:24:15.751398",
+  "smoke_mode": false,
+  "epochs_requested": 10,
+  "epochs_completed": 7,
+  "batch_size": 64,
+  "sequence_length": 50,
+  "vocabulary_size": 5044,
+  "train_samples": 48950,
+  "val_samples": 6108,
+  "test_samples": 8215,
+  "train_loss": 3.7991,
+  "val_loss": 5.0532,
+  "test_loss": 5.2177,
+  "train_perplexity": 44.66,
+  "val_perplexity": 156.53,
+  "test_perplexity": 184.51,
+  "training_duration_seconds": 1375.16,
+  "history": {
+    "accuracy": [
+      0.085,
+      0.1437,
+      0.1733,
+      0.1872,
+      0.199,
+      0.212,
+      0.2314
+    ],
+    "loss": [
+      5.9303,
+      5.1842,
+      4.8287,
+      4.5102,
+      4.2661,
+      4.0365,
+      3.7991
+    ],
+    "val_accuracy": [
+      0.1046,
+      0.1686,
+      0.1847,
+      0.1898,
+      0.1932,
+      0.1952,
+      0.1965
+    ],
+    "val_loss": [
+      5.5457,
+      5.2434,
+      5.0651,
+      5.0532,
+      5.059,
+      5.1178,
+      5.0806
+    ],
+    "learning_rate": [
+      0.002,
+      0.002,
+      0.002,
+      0.002,
+      0.002,
+      0.002,
+      0.001
+    ]
+  },
+  "evaluation_timestamp": "2026-09-28T19:36:59.233710",
+  "lstm_test_loss": 5.2177,
+  "lstm_test_accuracy": 0.1928,
+  "lstm_test_perplexity": 184.51,
+  "bigram_baseline_loss": 5.7508,
+  "bigram_baseline_perplexity": 314.44,
+  "mean_distinct_1": 0.7229,
+  "mean_distinct_2": 0.9375,
+  "mean_repetition_ratio_3gram": 0.0203,
+  "mean_latency_ms_per_token": 172.18,
+  "num_sweep_samples": 48
+}
