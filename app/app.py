@@ -5,10 +5,20 @@ import sys
 import streamlit as st
 import pandas as pd
 
-# Ensure project root is in sys.path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# Ensure project root and app directory are in sys.path
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
 
-from app.ui_helpers import load_cached_resources, load_metrics_and_artifacts, load_precomputed_samples
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+if APP_DIR not in sys.path:
+    sys.path.insert(0, APP_DIR)
+
+try:
+    from ui_helpers import load_cached_resources, load_metrics_and_artifacts, load_precomputed_samples
+except (ModuleNotFoundError, ImportError):
+    from app.ui_helpers import load_cached_resources, load_metrics_and_artifacts, load_precomputed_samples
+
 from src.generate import generate_continuation
 from src.metrics import evaluate_text_generation_quality
 

@@ -1,10 +1,16 @@
 """UI helper functions and caching utilities for Streamlit demonstration."""
 
 import os
+import sys
 import json
 import pandas as pd
 import streamlit as st
 from typing import Dict, Any, Optional, Tuple
+
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+
 from src.config import load_config, resolve_path
 from src.tokenizer import StoryTokenizer
 from src.model import load_trained_model
