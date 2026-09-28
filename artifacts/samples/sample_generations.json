@@ -1,0 +1,770 @@
+[
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 0.5,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": ". ' then he was seen him to the heart , and said : ' i will not go to be a courtyard of a tree , and the wolf had also to be not be . ' ' what",
+    "full_story": "once upon a time in a dark and ancient forest . ' then he was seen him to the heart , and said : ' i will not go to be a courtyard of a tree , and the wolf had also to be not be . ' ' what",
+    "latency_ms_per_token": 161.26,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.675,
+      "distinct_2": 0.9231,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 0.5,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": ". ' then he was been been been , and i came to the water , and the peasant said : ' no is not not have the king ' s voice , and said , ' said the old",
+    "full_story": "once upon a time in a dark and ancient forest . ' then he was been been been , and i came to the water , and the peasant said : ' no is not not have the king ' s voice , and said , ' said the old",
+    "latency_ms_per_token": 161.19,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.6,
+      "distinct_2": 0.9231,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 0.5,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": ". ' then he was gone to be . ' ' ah , ' said the king , ' said the king ' s husband , ' and he will have been so s birds , and said , '",
+    "full_story": "once upon a time in a dark and ancient forest . ' then he was gone to be . ' ' ah , ' said the king , ' said the king ' s husband , ' and he will have been so s birds , and said , '",
+    "latency_ms_per_token": 155.03,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.525,
+      "distinct_2": 0.8205,
+      "distinct_3": 0.9211,
+      "repetition_ratio_3gram": 0.0789
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 0.8,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "; and took him , \" one very door ' s nest . but the good woman , for her dear daughter with their lathe , and the old horse came upon the hand and said , ' i are",
+    "full_story": "once upon a time in a dark and ancient forest ; and took him , \" one very door ' s nest . but the good woman , for her dear daughter with their lathe , and the old horse came upon the hand and said , ' i are",
+    "latency_ms_per_token": 163.27,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.8,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 0.8,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "of the wall . and when she went . ' ' ah , you is not go , and said : ' t are no to go , and they came away , and i not not do a single",
+    "full_story": "once upon a time in a dark and ancient forest of the wall . and when she went . ' ' ah , you is not go , and said : ' t are no to go , and they came away , and i not not do a single",
+    "latency_ms_per_token": 160.58,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.7,
+      "distinct_2": 0.9231,
+      "distinct_3": 0.9737,
+      "repetition_ratio_3gram": 0.0263
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 0.8,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "; and at you was forced to eat the sun and drank to take her , and the feast had been all about him to a heart , and had have want to be as and a tree , and",
+    "full_story": "once upon a time in a dark and ancient forest ; and at you was forced to eat the sun and drank to take her , and the feast had been all about him to a heart , and had have want to be as and a tree , and",
+    "latency_ms_per_token": 156.75,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.675,
+      "distinct_2": 0.9487,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 1.0,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "on the bag who . pick in about the cellar and mistress : when a house they was dancing that if a papacy where is i no for you were mary require . ' for the father had not coming",
+    "full_story": "once upon a time in a dark and ancient forest on the bag who . pick in about the cellar and mistress : when a house they was dancing that if a papacy where is i no for you were mary require . ' for the father had not coming",
+    "latency_ms_per_token": 160.47,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.875,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 1.0,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "in the bag that the magic birds ; and i will eat his harm ' s head , i came out and read out in the tree , and as you should be all a long , and was there",
+    "full_story": "once upon a time in a dark and ancient forest in the bag that the magic birds ; and i will eat his harm ' s head , i came out and read out in the tree , and as you should be all a long , and was there",
+    "latency_ms_per_token": 170.7,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.75,
+      "distinct_2": 0.9487,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "for a courtyard of the porch fellow of the world ' s death was ; and they was sitting at me . now there were a daughter , and when you gave it . ' ' he have not found",
+    "full_story": "once upon a time in a dark and ancient forest for a courtyard of the porch fellow of the world ' s death was ; and they was sitting at me . now there were a daughter , and when you gave it . ' ' he have not found",
+    "latency_ms_per_token": 162.99,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.8,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 1.2,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "again . next wished , seeking passed round and ground . lady here once are my noise , till with better as chains behind him and garden the fire in your feasted daughter . but the wife king i heard",
+    "full_story": "once upon a time in a dark and ancient forest again . next wished , seeking passed round and ground . lady here once are my noise , till with better as chains behind him and garden the fire in your feasted daughter . but the wife king i heard",
+    "latency_ms_per_token": 178.96,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.875,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 1.2,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "for a courtyard of the porch birds of the world ' s husband was a beautiful daughter , but i are be seen out for the tree , and as you may have not go . and they had do",
+    "full_story": "once upon a time in a dark and ancient forest for a courtyard of the porch birds of the world ' s husband was a beautiful daughter , but i are be seen out for the tree , and as you may have not go . and they had do",
+    "latency_ms_per_token": 218.05,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.825,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "once upon a time in a dark and ancient forest",
+    "temperature": 1.2,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "! he cried : ' replied she is the tree , there will make him and set the courtyard that as it ran home with the hand , and all what been so them to be . he had take",
+    "full_story": "once upon a time in a dark and ancient forest ! he cried : ' replied she is the tree , there will make him and set the courtyard that as it ran home with the hand , and all what been so them to be . he had take",
+    "latency_ms_per_token": 187.44,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.875,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 0.5,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "and said : ' ' ah , ' said the king ' s wine , ' said the fox , ' i can go to the child , and said : ' i will be not be been to go",
+    "full_story": "the brave little prince drew his golden sword and said : ' ' ah , ' said the king ' s wine , ' said the fox , ' i can go to the child , and said : ' i will be not be been to go",
+    "latency_ms_per_token": 158.04,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.5,
+      "distinct_2": 0.7949,
+      "distinct_3": 0.8947,
+      "repetition_ratio_3gram": 0.1053
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 0.5,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "and said : ' ' no , ' i will not been been seen to the water , and said : ' no is not be been , and said : ' i will be not be been . '",
+    "full_story": "the brave little prince drew his golden sword and said : ' ' no , ' i will not been been seen to the water , and said : ' no is not be been , and said : ' i will be not be been . '",
+    "latency_ms_per_token": 163.2,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.425,
+      "distinct_2": 0.6923,
+      "distinct_3": 0.8158,
+      "repetition_ratio_3gram": 0.1842
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 0.5,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "and said : ' ' ah , ' said the king ' s end , ' said the children , ' i can go to the water , and said : ' i will be not be been to go",
+    "full_story": "the brave little prince drew his golden sword and said : ' ' ah , ' said the king ' s end , ' said the children , ' i can go to the water , and said : ' i will be not be been to go",
+    "latency_ms_per_token": 161.13,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.5,
+      "distinct_2": 0.7949,
+      "distinct_3": 0.8947,
+      "repetition_ratio_3gram": 0.1053
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 0.8,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "of the wall . and now as they was very clever snow . but the good woman , for her daughter , there took him , and the old horse came upon the hand and said , ' i are",
+    "full_story": "the brave little prince drew his golden sword of the wall . and now as they was very clever snow . but the good woman , for her daughter , there took him , and the old horse came upon the hand and said , ' i are",
+    "latency_ms_per_token": 170.49,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.775,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 0.8,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "to the barrel . and when she went and said , ' said he , ' said the wolf , ' i may take him , and the king had so offense and said the king , ' i came",
+    "full_story": "the brave little prince drew his golden sword to the barrel . and when she went and said , ' said he , ' said the wolf , ' i may take him , and the king had so offense and said the king , ' i came",
+    "latency_ms_per_token": 169.32,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.55,
+      "distinct_2": 0.7949,
+      "distinct_3": 0.9474,
+      "repetition_ratio_3gram": 0.0526
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 0.8,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "of the wall . and if i could not go to eat his courtyard and said the little peasant and give it on his barrel , and the king had very tolerable little work and said , ' i do",
+    "full_story": "the brave little prince drew his golden sword of the wall . and if i could not go to eat his courtyard and said the little peasant and give it on his barrel , and the king had very tolerable little work and said , ' i do",
+    "latency_ms_per_token": 170.15,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.725,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 1.0,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "; and laid me the porch dirty rolled and laid her iron asleep of one and saints . no morning if he seized about out the maiden the water not able by a wind . ' ' what she must",
+    "full_story": "the brave little prince drew his golden sword ; and laid me the porch dirty rolled and laid her iron asleep of one and saints . no morning if he seized about out the maiden the water not able by a wind . ' ' what she must",
+    "latency_ms_per_token": 166.69,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.825,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 1.0,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "of the wall . the second son came , and that this one day to the world , but she went to eat on her , and the king had be talking . ' said the king ' s bear",
+    "full_story": "the brave little prince drew his golden sword of the wall . the second son came , and that this one day to the world , but she went to eat on her , and the king had be talking . ' said the king ' s bear",
+    "latency_ms_per_token": 169.26,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.725,
+      "distinct_2": 0.9487,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "that he thought of the porch palace ; and said the fish he took her , he was gone in his wood : then they had so a door ; you may have not see a great things and kill",
+    "full_story": "the brave little prince drew his golden sword that he thought of the porch palace ; and said the fish he took her , he was gone in his wood : then they had so a door ; you may have not see a great things and kill",
+    "latency_ms_per_token": 186.3,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.85,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 1.2,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "on . whom is he plucked no watch , that said if with yet one of get , many miller met it else were draw a sight , and even stay sharp in they before he was laid ; their",
+    "full_story": "the brave little prince drew his golden sword on . whom is he plucked no watch , that said if with yet one of get , many miller met it else were draw a sight , and even stay sharp in they before he was laid ; their",
+    "latency_ms_per_token": 178.58,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.925,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 1.2,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "that he could have . however . so the son said : ' no a old princess , they came out . \" one ! ' said , ' what not show that a first king , ' i are",
+    "full_story": "the brave little prince drew his golden sword that he could have . however . so the son said : ' no a old princess , they came out . \" one ! ' said , ' what not show that a first king , ' i are",
+    "latency_ms_per_token": 182.55,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.75,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the brave little prince drew his golden sword",
+    "temperature": 1.2,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "in he did have . however he took the forest ' s lord for his head of the wall he took her longer with them , and the old horse came off . ' but he said to the same",
+    "full_story": "the brave little prince drew his golden sword in he did have . however he took the forest ' s lord for his head of the wall he took her longer with them , and the old horse came off . ' but he said to the same",
+    "latency_ms_per_token": 179.68,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.775,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 0.5,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "to the barrel , and went to a way and said : ' you will not do the bag ' s head in his wall , and the king had so aristotle , and said , ' said the man",
+    "full_story": "deep inside the hidden cave , the old wizard whispered to the barrel , and went to a way and said : ' you will not do the bag ' s head in his wall , and the king had so aristotle , and said , ' said the man",
+    "latency_ms_per_token": 208.56,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.65,
+      "distinct_2": 0.9231,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 0.5,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "to the wall , and when he had not do a courtyard ' s house , and the peasant said : ' no is not not have the king ' s voice , and said , ' said the old",
+    "full_story": "deep inside the hidden cave , the old wizard whispered to the wall , and when he had not do a courtyard ' s house , and the peasant said : ' no is not not have the king ' s voice , and said , ' said the old",
+    "latency_ms_per_token": 177.44,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.6,
+      "distinct_2": 0.9231,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 0.5,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "to the wall , and when he had not do a courtyard ' s children , and the bear said : ' ah , ' said the king , ' said the king , ' i is not be want",
+    "full_story": "deep inside the hidden cave , the old wizard whispered to the wall , and when he had not do a courtyard ' s children , and the bear said : ' ah , ' said the king , ' said the king , ' i is not be want",
+    "latency_ms_per_token": 173.12,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.6,
+      "distinct_2": 0.8205,
+      "distinct_3": 0.8684,
+      "repetition_ratio_3gram": 0.1316
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 0.8,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "on the sick palace , for not found the death and revealed to all a wood , and take him on the sense for his tree , and a merry killed from the sun ' s other . ' then",
+    "full_story": "deep inside the hidden cave , the old wizard whispered on the sick palace , for not found the death and revealed to all a wood , and take him on the sense for his tree , and a merry killed from the sun ' s other . ' then",
+    "latency_ms_per_token": 175.55,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.725,
+      "distinct_2": 0.9487,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 0.8,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "in the courtyard . the second son came , and that they have so all the barrel , and said : ' t are no to go , and they came away , and said , ' said the first",
+    "full_story": "deep inside the hidden cave , the old wizard whispered in the courtyard . the second son came , and that they have so all the barrel , and said : ' t are no to go , and they came away , and said , ' said the first",
+    "latency_ms_per_token": 172.36,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.625,
+      "distinct_2": 0.8974,
+      "distinct_3": 0.9737,
+      "repetition_ratio_3gram": 0.0263
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 0.8,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "at the wall . and no wife came , and in this time in the son . and when it went to see me ; and i was not get on him , and said , ' said the children",
+    "full_story": "deep inside the hidden cave , the old wizard whispered at the wall . and no wife came , and in this time in the son . and when it went to see me ; and i was not get on him , and said , ' said the children",
+    "latency_ms_per_token": 184.53,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.725,
+      "distinct_2": 0.9487,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 1.0,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "from her harm ; and caused me upon the words the gentleman hour of a world ; and put him one . gretel laid himself . ' the good while must peace to me . ' ' what she must",
+    "full_story": "deep inside the hidden cave , the old wizard whispered from her harm ; and caused me upon the words the gentleman hour of a world ; and put him one . gretel laid himself . ' the good while must peace to me . ' ' what she must",
+    "latency_ms_per_token": 176.92,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.75,
+      "distinct_2": 0.9487,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 1.0,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "with a revenge . the second son came , and that this one day to the world , but that you is seen out in the tree , and as you should be all a long , and was there",
+    "full_story": "deep inside the hidden cave , the old wizard whispered with a revenge . the second son came , and that this one day to the world , but that you is seen out in the tree , and as you should be all a long , and was there",
+    "latency_ms_per_token": 174.42,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.75,
+      "distinct_2": 0.9487,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "on . at her , however , one , he had want in this ; and they was sitting at me . now one little man was , and when you know a children . ' ' then the bear",
+    "full_story": "deep inside the hidden cave , the old wizard whispered on . at her , however , one , he had want in this ; and they was sitting at me . now one little man was , and when you know a children . ' ' then the bear",
+    "latency_ms_per_token": 173.66,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.75,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 1.2,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "gone of snowdrop is . sir ; rich in your servant grieved there called for the spring , now ran first ; immediately our countryman and open the wolf once carry near her again . ' ' \" she ran",
+    "full_story": "deep inside the hidden cave , the old wizard whispered gone of snowdrop is . sir ; rich in your servant grieved there called for the spring , now ran first ; immediately our countryman and open the wolf once carry near her again . ' ' \" she ran",
+    "latency_ms_per_token": 168.48,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.875,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 1.2,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "at a courtyard of the porch birds was the tree and eat him for it , and the third woman had not fare on his other . the king is there into the water ' s time . ' then",
+    "full_story": "deep inside the hidden cave , the old wizard whispered at a courtyard of the porch birds was the tree and eat him for it , and the third woman had not fare on his other . the king is there into the water ' s time . ' then",
+    "latency_ms_per_token": 164.15,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.825,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "deep inside the hidden cave, the old wizard whispered",
+    "temperature": 1.2,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "into a bag with the porch coat of the sun ' s death said . ' then the lord is more ; or no day and his king ' s feast went to her ; and he came to all",
+    "full_story": "deep inside the hidden cave , the old wizard whispered into a bag with the porch coat of the sun ' s death said . ' then the lord is more ; or no day and his king ' s feast went to her ; and he came to all",
+    "latency_ms_per_token": 165.56,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.8,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 0.5,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "him . ' then the moon had not not do a courtyard and said , ' said the woman , ' i can go to the children , and said : ' i will be not be been to go",
+    "full_story": "the poor woodcutter looked into the crystal river and saw him . ' then the moon had not not do a courtyard and said , ' said the woman , ' i can go to the children , and said : ' i will be not be been to go",
+    "latency_ms_per_token": 171.06,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.6,
+      "distinct_2": 0.9231,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 0.5,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "him . ' then the clever said the king , ' what not have not be been , and said : ' no is not be been , and said : ' i will be not be been . '",
+    "full_story": "the poor woodcutter looked into the crystal river and saw him . ' then the clever said the king , ' what not have not be been , and said : ' no is not be been , and said : ' i will be not be been . '",
+    "latency_ms_per_token": 177.69,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.5,
+      "distinct_2": 0.7436,
+      "distinct_3": 0.8158,
+      "repetition_ratio_3gram": 0.1842
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 0.5,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "him . ' then the clever said the king , ' what not have not be been . ' said the king ' s husband , ' i had not take them , and said , ' said the man",
+    "full_story": "the poor woodcutter looked into the crystal river and saw him . ' then the clever said the king , ' what not have not be been . ' said the king ' s husband , ' i had not take them , and said , ' said the man",
+    "latency_ms_per_token": 173.72,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.55,
+      "distinct_2": 0.8205,
+      "distinct_3": 0.9474,
+      "repetition_ratio_3gram": 0.0526
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 0.8,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "with the wealth . and now as they was very clever snow . but the good woman , for her prince , there took him , and the old horse came upon the hand and said , ' i are",
+    "full_story": "the poor woodcutter looked into the crystal river and saw with the wealth . and now as they was very clever snow . but the good woman , for her prince , there took him , and the old horse came upon the hand and said , ' i are",
+    "latency_ms_per_token": 179.85,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.775,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 0.8,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "him . so he was seen with his way and said : ' what that the son , i have not no harm in him , and the king had will find it . ' ' ' said the first",
+    "full_story": "the poor woodcutter looked into the crystal river and saw him . so he was seen with his way and said : ' what that the son , i have not no harm in him , and the king had will find it . ' ' ' said the first",
+    "latency_ms_per_token": 173.87,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.75,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 0.8,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "him . so he was forced to eat the whole house ; and when he said to the garden and be not fare out ; and in the king was no bridge , and said , ' said the fox",
+    "full_story": "the poor woodcutter looked into the crystal river and saw him . so he was forced to eat the whole house ; and when he said to the garden and be not fare out ; and in the king was no bridge , and said , ' said the fox",
+    "latency_ms_per_token": 166.17,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.675,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 1.0,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "them to draw no , open on his house . ' hansel so merry as a others , no night who had allowed away into the wind , and cried : then he will go to a wine , she",
+    "full_story": "the poor woodcutter looked into the crystal river and saw them to draw no , open on his house . ' hansel so merry as a others , no night who had allowed away into the wind , and cried : then he will go to a wine , she",
+    "latency_ms_per_token": 173.81,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.85,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 1.0,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "him . then she was forced to eat the tree , but that they will not go , i came out and read them in the tree , and as you should be all a long , and was no",
+    "full_story": "the poor woodcutter looked into the crystal river and saw him . then she was forced to eat the tree , but that they will not go , i came out and read them in the tree , and as you should be all a long , and was no",
+    "latency_ms_per_token": 159.12,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.8,
+      "distinct_2": 0.9231,
+      "distinct_3": 0.9737,
+      "repetition_ratio_3gram": 0.0263
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "with a courtyard that the wall is been . ' i may come by a beautiful horse , but said : ' t shall take a fire , and when you gave it . ' ' he have not found",
+    "full_story": "the poor woodcutter looked into the crystal river and saw with a courtyard that the wall is been . ' i may come by a beautiful horse , but said : ' t shall take a fire , and when you gave it . ' ' he have not found",
+    "latency_ms_per_token": 152.24,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.825,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 1.2,
+    "top_k": 0,
+    "top_p": 0.9,
+    "continuation": "after her rejoicing ; and monks led brought the brothers : people may dark works . so the duck get why they forgotten round their daughter . the wife told them roland . it would all it is as both",
+    "full_story": "the poor woodcutter looked into the crystal river and saw after her rejoicing ; and monks led brought the brothers : people may dark works . so the duck get why they forgotten round their daughter . the wife told them roland . it would all it is as both",
+    "latency_ms_per_token": 164.04,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.875,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 1.2,
+    "top_k": 20,
+    "top_p": 0.9,
+    "continuation": "him . then she was forced ; but the son said : ' no he said to the barrel . but he should give me the water , and as you may be all it , and said , '",
+    "full_story": "the poor woodcutter looked into the crystal river and saw him . then she was forced ; but the son said : ' no he said to the barrel . but he should give me the water , and as you may be all it , and said , '",
+    "latency_ms_per_token": 167.85,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.725,
+      "distinct_2": 0.9744,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  },
+  {
+    "prompt": "the poor woodcutter looked into the crystal river and saw",
+    "temperature": 1.2,
+    "top_k": 50,
+    "top_p": 0.9,
+    "continuation": "me to sleep in the porch fellow as and as she found with himself . ' then the lord will set her dress \" all . she was in go on their gold . he had said to the same",
+    "full_story": "the poor woodcutter looked into the crystal river and saw me to sleep in the porch fellow as and as she found with himself . ' then the lord will set her dress \" all . she was in go on their gold . he had said to the same",
+    "latency_ms_per_token": 198.46,
+    "metrics": {
+      "total_tokens": 40,
+      "distinct_1": 0.8,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "repetition_ratio_3gram": 0.0
+    }
+  }
+]
