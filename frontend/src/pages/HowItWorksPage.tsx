@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Layers, GitBranch, Terminal, ShieldCheck } from 'lucide-react';
+import { Cpu, Layers, GitBranch, Terminal } from 'lucide-react';
 
 export const HowItWorksPage: React.FC = () => {
   return (
@@ -41,7 +41,7 @@ export const HowItWorksPage: React.FC = () => {
           <div>│ 4. Dense Head (Units: 5004, Softmax Distribution)         │</div>
           <div>└───────────────────────────────────────────────────────────┘</div>
           <div>       │</div>
-          <div>       ▼  Logits / Probability Distribution \(P(w_{t+1})\)</div>
+          <div>{'       ▼  Logits / Probability Distribution P(w_t+1)'}</div>
           <div>[Sampling Engine: Temperature Scaling ➔ Top-K ➔ Top-P]</div>
           <div>       │</div>
           <div>       ▼  (Sample next token ID ➔ Append to Context Window)</div>

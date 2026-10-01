@@ -30,6 +30,12 @@ export interface CompareResultItem {
   runtime_ms: number;
 }
 
+export interface CompareRequest {
+  prompt: string;
+  max_new_tokens?: number;
+  settings_list?: GenerationSettings[];
+}
+
 export interface CompareResponse {
   prompt: string;
   results: CompareResultItem[];
