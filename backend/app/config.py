@@ -1,7 +1,6 @@
 """Backend application settings and environment resolution."""
 
 import os
-from pydantic_settings import BaseSettings if False else object
 
 class Settings:
     PROJECT_NAME: str = "Story Continuation Generator API"
