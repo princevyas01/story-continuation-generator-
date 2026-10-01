@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BarChart3, Database, CheckCircle2, TrendingDown, Clock, Cpu } from 'lucide-react';
+import { BarChart3, Database, CheckCircle2, TrendingDown, Cpu } from 'lucide-react';
 import { api } from '../api/client';
 import { ModelStatusResponse, ModelMetricsResponse } from '../types';
 
@@ -22,6 +22,14 @@ export const MetricsPage: React.FC = () => {
     }
     fetchData();
   }, []);
+
+  if (loading) {
+    return (
+      <div className="card" style={{ textAlign: 'center', padding: '3rem 1.5rem', color: '#94a3b8' }}>
+        Loading model metrics and performance diagnostics...
+      </div>
+    );
+  }
 
   const m = metricsData?.metrics || {};
 
@@ -108,7 +116,7 @@ export const MetricsPage: React.FC = () => {
                 <td style={{ padding: '0.75rem 0' }}>256 units per layer (512 total)</td>
               </tr>
               <tr style={{ borderBottom: '1px solid #2e3c61' }}>
-                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Context Window (\(T_{seq}\))</td>
+                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Context Window (T_seq)</td>
                 <td style={{ padding: '0.75rem 0' }}>50 tokens</td>
               </tr>
               <tr style={{ borderBottom: '1px solid #2e3c61' }}>
