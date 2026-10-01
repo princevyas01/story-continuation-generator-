@@ -10,9 +10,12 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..",
 
 from backend.app.main import app
 
-client = TestClient(app)
+@pytest.fixture(scope="module")
+def client():
+    with TestClient(app) as c:
+        yield c
 
-def test_health_endpoint():
+def test_health_endpoint(client):
     response = client.get("/api/v1/health")
     assert response.status_code == 200
     data = response.json()
@@ -20,41 +23,41 @@ def test_health_endpoint():
     assert "model_loaded" in data
     assert "version" in data
 
-def test_model_status_endpoint():
+def test_model_status_endpoint(client):
     response = client.get("/api/v1/model/status")
     assert response.status_code == 200
     data = response.json()
     assert data["model_name"] == "story_continuation_lstm"
     assert "vocab_size" in data
 
-def test_model_metrics_endpoint():
+def test_model_metrics_endpoint(client):
     response = client.get("/api/v1/model/metrics")
     assert response.status_code == 200
     data = response.json()
     assert "metrics" in data
 
-def test_generate_validation_empty_prompt():
+def test_generate_validation_empty_prompt(client):
     response = client.post("/api/v1/generate", json={
         "prompt": "   ",
         "max_new_tokens": 20
     })
     assert response.status_code == 422
 
-def test_generate_validation_temperature_zero():
+def test_generate_validation_temperature_zero(client):
     response = client.post("/api/v1/generate", json={
         "prompt": "Once upon a time",
         "temperature": 0.0
     })
     assert response.status_code == 422
 
-def test_generate_validation_tokens_too_large():
+def test_generate_validation_tokens_too_large(client):
     response = client.post("/api/v1/generate", json={
         "prompt": "Once upon a time",
         "max_new_tokens": 5000
     })
     assert response.status_code == 422
 
-def test_generate_valid_prompt():
+def test_generate_valid_prompt(client):
     response = client.post("/api/v1/generate", json={
         "prompt": "Once upon a time",
         "max_new_tokens": 5,
