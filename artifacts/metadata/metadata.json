@@ -1,0 +1,26 @@
+{
+  "project": "Story Continuation Generator",
+  "version": "2.0.0",
+  "architecture": "2-Layer LSTM with Word Embedding and Dropout",
+  "parameters": {
+    "embedding_dim": 128,
+    "lstm_units": 256,
+    "num_layers": 2,
+    "dropout_rate": 0.2,
+    "vocab_size": 5004,
+    "sequence_length": 50
+  },
+  "training": {
+    "dataset": "Grimm Fairy Tales & Andersen Stories",
+    "dataset_tokens": 129480,
+    "vocabulary_size": 5004,
+    "best_val_loss": 5.0532,
+    "perplexity": 156.52,
+    "hardware": "Intel Core Ultra 5 125H (CPU-first)"
+  },
+  "serving": {
+    "framework": "FastAPI",
+    "frontend": "React 18 + TypeScript + Vite",
+    "api_version": "v1"
+  }
+}
