@@ -44,6 +44,7 @@ async def generate_continuation(request: GenerateRequest):
             temperature=request.temperature,
             top_k=request.top_k,
             top_p=request.top_p,
+            repetition_penalty=request.repetition_penalty or 1.15,
             seed=request.seed
         )
 
@@ -55,6 +56,7 @@ async def generate_continuation(request: GenerateRequest):
                 temperature=request.temperature,
                 top_k=request.top_k,
                 top_p=request.top_p,
+                repetition_penalty=request.repetition_penalty or 1.15,
                 seed=request.seed
             ),
             runtime_ms=runtime_ms,
@@ -92,6 +94,7 @@ async def compare_generations(request: CompareRequest):
             temperature=s.temperature,
             top_k=s.top_k,
             top_p=s.top_p,
+            repetition_penalty=s.repetition_penalty or 1.15,
             seed=s.seed
         )
         results.append(
