@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-10-19T16:22:10Z",
+  "baseline_v1": {
+    "name": "Story Continuation LSTM v1 (Baseline)",
+    "tokenizer": "Word-level (5,044 words)",
+    "objective": "Many-to-One (next token)",
+    "parameters": 2861492,
+    "test_loss": 5.218,
+    "test_perplexity": 184.51,
+    "test_accuracy": 0.1928,
+    "distinct_1": 0.25102543068088595,
+    "distinct_2": 0.7081581160639192,
+    "repetition_4": 0.0,
+    "mean_latency_ms": 374.1333333333333,
+    "ms_per_token": 7.482666666666667
+  },
+  "candidate_v2": {
+    "name": "Story Continuation LSTM v2 (Candidate)",
+    "tokenizer": "Byte-Level BPE (8,000 subwords)",
+    "objective": "Many-to-Many autoregressive with Masked Crossentropy",
+    "parameters": 4577088,
+    "test_loss": 4.177959442138672,
+    "test_perplexity": 65.6175765991211,
+    "test_accuracy": 0.27467817068099976,
+    "distinct_1": 0.2697768762677485,
+    "distinct_2": 0.7050209205020921,
+    "repetition_4": 0.0,
+    "mean_latency_ms": 1060.8666666666666,
+    "ms_per_token": 21.217333333333332
+  },
+  "improvements": {
+    "perplexity_reduction_percent": 64.4368453747108,
+    "accuracy_gain_percent": 8.187817068099976,
+    "distinct_1_gain": 0.018751445586862536,
+    "distinct_2_gain": -0.003137195561827122,
+    "repetition_reduction": 0.0
+  }
+}
