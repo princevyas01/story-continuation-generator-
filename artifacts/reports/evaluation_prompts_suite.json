@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "category": "Standard Fairytale Opening",
+    "prompt": "Once upon a time, deep inside an ancient forest, lived a tiny squirrel who loved"
+  },
+  {
+    "id": 2,
+    "category": "Standard Fairytale Opening",
+    "prompt": "Long ago in a kingdom surrounded by misty blue mountains, a young prince"
+  },
+  {
+    "id": 3,
+    "category": "Standard Fairytale Opening",
+    "prompt": "In a peaceful village where flowers bloomed all year, there was a little house where"
+  },
+  {
+    "id": 4,
+    "category": "Standard Fairytale Opening",
+    "prompt": "Once upon a time, an old clockmaker found an unusual golden key inside"
+  },
+  {
+    "id": 5,
+    "category": "Character Introduction",
+    "prompt": "Lily was a cheerful five-year-old girl who always wore bright yellow rain boots because"
+  },
+  {
+    "id": 6,
+    "category": "Character Introduction",
+    "prompt": "Barnaby the bear was known across the woods for being clumsy, but he had the kindest"
+  },
+  {
+    "id": 7,
+    "category": "Character Introduction",
+    "prompt": "Captain Oliver stood on the deck of his wooden sailboat and adjusted his brass telescope, wondering"
+  },
+  {
+    "id": 8,
+    "category": "Character Introduction",
+    "prompt": "Zara was the most curious rabbit in the meadow, never satisfied with ordinary carrot patches when"
+  },
+  {
+    "id": 9,
+    "category": "Action & Adventure",
+    "prompt": "The wind howled through the cave entrance as Tim grabbed his wooden staff and took"
+  },
+  {
+    "id": 10,
+    "category": "Action & Adventure",
+    "prompt": "Suddenly the rope bridge swung wildly from side to side over the roaring river below, and"
+  },
+  {
+    "id": 11,
+    "category": "Action & Adventure",
+    "prompt": "The little red dragon leaped from the highest rock and flapped his tiny wings as fast as"
+  },
+  {
+    "id": 12,
+    "category": "Action & Adventure",
+    "prompt": "When the mysterious trapdoor popped open in the library attic, Lucas shone his flashlight down into"
+  },
+  {
+    "id": 13,
+    "category": "Dialogue Continuation",
+    "prompt": "\"Please don't go into the dark cellar,\" whispered Mia. But Leo smiled and replied,"
+  },
+  {
+    "id": 14,
+    "category": "Dialogue Continuation",
+    "prompt": "\"Did you see that shining light over the lake?\" asked the fox. The owl blinked slowly and said,"
+  },
+  {
+    "id": 15,
+    "category": "Dialogue Continuation",
+    "prompt": "\"I promise I will return before sunset,\" said Ella, tying her shoelaces. Her mother nodded gently and warned,"
+  },
+  {
+    "id": 16,
+    "category": "Dialogue Continuation",
+    "prompt": "\"Where did all the chocolate cookies go?\" shouted Dad with a suspicious frown. Sammy giggled and confessed,"
+  },
+  {
+    "id": 17,
+    "category": "Moral & Lesson",
+    "prompt": "Even though Peter really wanted to keep the shiny coin he found on the street, he decided to"
+  },
+  {
+    "id": 18,
+    "category": "Moral & Lesson",
+    "prompt": "After laughing at his little sister when she dropped her ice cream cone, Ben realized"
+  },
+  {
+    "id": 19,
+    "category": "Moral & Lesson",
+    "prompt": "Working together to build the treehouse was harder than doing it alone, but when the roof was finished they discovered"
+  },
+  {
+    "id": 20,
+    "category": "Moral & Lesson",
+    "prompt": "Greedy monkey Bob hid all the ripe mangoes for himself, but when rain came he learned that"
+  },
+  {
+    "id": 21,
+    "category": "Emotional Shift",
+    "prompt": "At first, little Emma was terrified of the dark bedroom shadows, but when she hugged her teddy bear she suddenly"
+  },
+  {
+    "id": 22,
+    "category": "Emotional Shift",
+    "prompt": "Everyone laughed with excitement during the celebration until a sudden loud knock on the door made the room"
+  },
+  {
+    "id": 23,
+    "category": "Emotional Shift",
+    "prompt": "Toby felt heartbroken when his toy airplane snapped in half, but his grandfather smiled warmly and"
+  },
+  {
+    "id": 24,
+    "category": "Emotional Shift",
+    "prompt": "The puppy was trembling under the porch after the thunderstorm, but when gentle hands offered warm milk he"
+  },
+  {
+    "id": 25,
+    "category": "Unseen Modern Concepts",
+    "prompt": "Maya sat down at her computer laptop to design a robotic helper that could sort recycled plastics, but"
+  },
+  {
+    "id": 26,
+    "category": "Unseen Modern Concepts",
+    "prompt": "The solar-powered drone buzzed gently above the vegetable garden, scanning each tomato plant until"
+  },
+  {
+    "id": 27,
+    "category": "Unseen Modern Concepts",
+    "prompt": "When the Wi-Fi signal vanished in the middle of their online game, the three friends decided to"
+  },
+  {
+    "id": 28,
+    "category": "Rare Names & Creative Settings",
+    "prompt": "High upon the floating crystal islands of Zephyria, a young apprentice named Aethelgard discovered"
+  },
+  {
+    "id": 29,
+    "category": "Rare Names & Creative Settings",
+    "prompt": "Deep underwater in the luminous coral dome of Thalassia, princess Nerida found a strange glowing locket that"
+  },
+  {
+    "id": 30,
+    "category": "Rare Names & Creative Settings",
+    "prompt": "In the bioluminescent hollow of Quenxar, an inquisitive badger named Vesper searched for"
+  }
+]
