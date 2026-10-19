@@ -43,3 +43,6 @@ frontend/dist/
 dist/
 .env
 .env.local
+
+# Archives
+*.zip
