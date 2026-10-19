@@ -1,0 +1,13 @@
+{
+  "model_type": "Byte-Level BPE",
+  "vocab_size": 8000,
+  "special_tokens": {
+    "<PAD>": 0,
+    "<UNK>": 1,
+    "<BOS>": 2,
+    "<EOS>": 3
+  },
+  "train_source": "data\\processed\\v2\\train.jsonl",
+  "val_unk_rate": 0.0,
+  "test_unk_rate": 0.0
+}
