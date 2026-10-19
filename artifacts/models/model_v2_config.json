@@ -1,0 +1,18 @@
+{
+  "architecture": "StackedLSTM-ManyToMany",
+  "vocab_size": 8000,
+  "embedding_dim": 192,
+  "lstm_units": 256,
+  "num_layers": 2,
+  "dropout_rate": 0.2,
+  "seq_len": 128,
+  "stride": 96,
+  "pad_id": 0,
+  "unk_id": 1,
+  "bos_id": 2,
+  "eos_id": 3,
+  "optimizer": "Adam",
+  "learning_rate": 0.0015,
+  "clipnorm": 1.0,
+  "loss": "MaskedSparseCategoricalCrossentropy"
+}
