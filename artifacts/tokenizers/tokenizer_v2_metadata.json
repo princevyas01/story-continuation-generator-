@@ -1,0 +1,22 @@
+{
+  "type": "subword_bytelevel_bpe",
+  "vocab_size": 8000,
+  "special_tokens": {
+    "pad": {
+      "token": "<PAD>",
+      "id": 0
+    },
+    "unk": {
+      "token": "<UNK>",
+      "id": 1
+    },
+    "bos": {
+      "token": "<BOS>",
+      "id": 2
+    },
+    "eos": {
+      "token": "<EOS>",
+      "id": 3
+    }
+  }
+}
