@@ -9,7 +9,13 @@ class Settings:
     
     BASE_DIR: str = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     
-    # Path resolution with fallbacks
+    # Path resolution with v2 preferred and v1 fallback
+    MODEL_V2_PATH: str = os.path.join(BASE_DIR, "artifacts", "models", "story_lstm_v2.keras")
+    MODEL_V2_BEST_PATH: str = os.path.join(BASE_DIR, "models", "best", "story_lstm_v2.keras")
+    
+    TOKENIZER_V2_PATH: str = os.path.join(BASE_DIR, "artifacts", "tokenizers", "tokenizer_v2.json")
+    
+    # Legacy v1 paths
     MODEL_PATH: str = os.getenv(
         "MODEL_PATH",
         os.path.join(BASE_DIR, "artifacts", "models", "story_lstm.keras")
@@ -23,6 +29,7 @@ class Settings:
     LEGACY_TOKENIZER_PATH: str = os.path.join(BASE_DIR, "artifacts", "tokenizer_vocab.json")
     
     METRICS_PATH: str = os.path.join(BASE_DIR, "artifacts", "metrics", "metrics.json")
+    METRICS_V2_PATH: str = os.path.join(BASE_DIR, "artifacts", "reports", "evaluation_comparison_v2.json")
     DIST_DIR: str = os.path.join(BASE_DIR, "frontend", "dist")
 
     # CORS origins
