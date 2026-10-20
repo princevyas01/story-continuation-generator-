@@ -14,6 +14,7 @@ export const GeneratorPage: React.FC = () => {
     top_k: 40,
     top_p: 0.90,
     seed: undefined,
+    model_version: 'v3',
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -42,6 +43,7 @@ export const GeneratorPage: React.FC = () => {
           top_k: settings.top_k,
           top_p: settings.top_p,
           seed: settings.seed,
+          model_version: settings.model_version,
         },
         controller.signal
       );
