@@ -4,6 +4,7 @@ export interface GenerationSettings {
   top_k: number;
   top_p?: number;
   seed?: number;
+  model_version?: string;
 }
 
 export interface GenerateRequest {
@@ -13,6 +14,7 @@ export interface GenerateRequest {
   top_k: number;
   top_p?: number;
   seed?: number;
+  model_version?: string;
 }
 
 export interface GenerateResponse {
@@ -48,10 +50,13 @@ export interface ModelStatusResponse {
   vocab_size: number;
   device: string;
   parameters_count?: number;
+  active_version?: string;
+  available_versions?: string[];
 }
 
 export interface ModelMetricsResponse {
   status: string;
+  version?: string;
   metrics: {
     training_duration_seconds?: number;
     epochs_completed?: number;
@@ -62,6 +67,9 @@ export interface ModelMetricsResponse {
     train_samples?: number;
     val_samples?: number;
     token_accuracy?: number;
+    test_loss_nats_per_subword?: number;
+    test_perplexity_subword_tokenizer?: number;
+    test_next_token_accuracy_percent?: number;
     [key: string]: any;
   };
 }
