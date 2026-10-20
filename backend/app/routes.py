@@ -45,8 +45,12 @@ async def generate_continuation(request: GenerateRequest):
             top_k=request.top_k,
             top_p=request.top_p,
             repetition_penalty=request.repetition_penalty or 1.15,
-            seed=request.seed
+            seed=request.seed,
+            model_version=request.model_version,
         )
+
+        chosen_key = model_service._normalize_version_key(request.model_version)
+        version_label = model_service._registry.get(chosen_key, {}).get("version_label", settings.VERSION)
 
         return GenerateResponse(
             prompt=request.prompt,
@@ -57,10 +61,11 @@ async def generate_continuation(request: GenerateRequest):
                 top_k=request.top_k,
                 top_p=request.top_p,
                 repetition_penalty=request.repetition_penalty or 1.15,
-                seed=request.seed
+                seed=request.seed,
+                model_version=chosen_key,
             ),
             runtime_ms=runtime_ms,
-            model_version=settings.VERSION
+            model_version=version_label,
         )
     except Exception as exc:
         raise HTTPException(
@@ -95,14 +100,15 @@ async def compare_generations(request: CompareRequest):
             top_k=s.top_k,
             top_p=s.top_p,
             repetition_penalty=s.repetition_penalty or 1.15,
-            seed=s.seed
+            seed=s.seed,
+            model_version=s.model_version,
         )
         results.append(
             CompareResultItem(
                 name=name,
                 settings=s,
                 generated_text=text,
-                runtime_ms=ms
+                runtime_ms=ms,
             )
         )
 
