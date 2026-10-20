@@ -1,0 +1,1378 @@
+{
+  "summary": {
+    "timestamp": "2026-10-20T14:54:05Z",
+    "prompts_evaluated": 30,
+    "settings": {
+      "max_new_tokens": 50,
+      "temperature": 0.75,
+      "top_k": 40,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "seed": 42
+    },
+    "v2_baseline_aggregates": {
+      "mean_latency_ms": 1005.1,
+      "mean_distinct_1": 0.8917,
+      "mean_distinct_2": 0.9912,
+      "mean_repetition_4": 0.0
+    },
+    "v3_candidate_aggregates": {
+      "mean_latency_ms": 1168.4,
+      "mean_distinct_1": 0.8063,
+      "mean_distinct_2": 0.9759,
+      "mean_repetition_4": 0.0
+    }
+  },
+  "samples": [
+    {
+      "id": 1,
+      "category": "Standard Fairytale Opening",
+      "prompt": "Once upon a time, deep inside an ancient forest, lived a tiny squirrel who loved",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " to do it.\n\nBut they said, \"We are your friends. 'I will have you it,\" Ben asked. He was so happy and gave the park.\n\nThe little girl's mom smiled and ran around the car.",
+        "runtime_ms": 1345,
+        "diversity": {
+          "distinct_1": 0.8857,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 35
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 169
+        }
+      },
+      "v3": {
+        "generated_text": " to jump around. One day, while the bunny was hopping around the forest, he saw a big tree. It was very tall and the tree was very dirty. The bunny had a small idea and said he could help his friends. He quickly ran",
+        "runtime_ms": 1300,
+        "diversity": {
+          "distinct_1": 0.7045,
+          "distinct_2": 0.9535,
+          "repetition_4": 0.0,
+          "word_count": 44
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 214
+        }
+      }
+    },
+    {
+      "id": 2,
+      "category": "Standard Fairytale Opening",
+      "prompt": "Long ago in a kingdom surrounded by misty blue mountains, a young prince",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " of the ground.",
+        "runtime_ms": 115,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 14
+        }
+      },
+      "v3": {
+        "generated_text": " and a dragon. The knight was very happy and he thanked the King for his help. He then flew away into the kingdom, never to be seen again.",
+        "runtime_ms": 756,
+        "diversity": {
+          "distinct_1": 0.8571,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 28
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 137
+        }
+      }
+    },
+    {
+      "id": 3,
+      "category": "Standard Fairytale Opening",
+      "prompt": "In a peaceful village where flowers bloomed all year, there was a little house where",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " she had back in the lake. She was so happy to see her time, she was sad and went with them with his mom.",
+        "runtime_ms": 677,
+        "diversity": {
+          "distinct_1": 0.8333,
+          "distinct_2": 0.9565,
+          "repetition_4": 0.0,
+          "word_count": 24
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 104
+        }
+      },
+      "v3": {
+        "generated_text": " they could find out. At the end of the day, they all went to their home and their family was happy again.",
+        "runtime_ms": 604,
+        "diversity": {
+          "distinct_1": 0.8636,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 22
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 105
+        }
+      }
+    },
+    {
+      "id": 4,
+      "category": "Standard Fairytale Opening",
+      "prompt": "Once upon a time, an old clockmaker found an unusual golden key inside",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": ".\n\nLily to take her fun, he had lots of more mom. She was happy and they were proud of her and said!\n\nBut then, and she had a big time in the ground. The sun felt so happy to be",
+        "runtime_ms": 1064,
+        "diversity": {
+          "distinct_1": 0.7805,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 41
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 177
+        }
+      },
+      "v3": {
+        "generated_text": ". He opened it and opened it up. Inside, there was a big, shiny and colourful key. The post had never seen it before! It was very old and had a big smile on its face. It was so beautiful, and it was",
+        "runtime_ms": 1097,
+        "diversity": {
+          "distinct_1": 0.6512,
+          "distinct_2": 0.9048,
+          "repetition_4": 0.0,
+          "word_count": 43
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 198
+        }
+      }
+    },
+    {
+      "id": 5,
+      "category": "Character Introduction",
+      "prompt": "Lily was a cheerful five-year-old girl who always wore bright yellow rain boots because",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " she had all his mom and asked her.\n\nShe smiled to be so happy, but it was a bit more happy. He was so excited to give the park and said, \"I are very careful!\"\n\nBut she had Lily.",
+        "runtime_ms": 1590,
+        "diversity": {
+          "distinct_1": 0.7692,
+          "distinct_2": 0.9737,
+          "repetition_4": 0.0,
+          "word_count": 39
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 177
+        }
+      },
+      "v3": {
+        "generated_text": " she had found her new home. She was so happy that she made a new friend, and she hugged her mommy tightly. The end.",
+        "runtime_ms": 1037,
+        "diversity": {
+          "distinct_1": 0.7917,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 24
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 115
+        }
+      }
+    },
+    {
+      "id": 6,
+      "category": "Character Introduction",
+      "prompt": "Barnaby the bear was known across the woods for being clumsy, but he had the kindest",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " friend. She wanted to keep her friends, and her dad saw the park. The little girl said and she didn't find a big.\n\nBut then the man was so happy and he smiled. They started to find him. He looked in",
+        "runtime_ms": 1621,
+        "diversity": {
+          "distinct_1": 0.7805,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 41
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 198
+        }
+      },
+      "v3": {
+        "generated_text": " thing he could do. And that's what he did and it had to be careful. He would never forget this exciting adventures!",
+        "runtime_ms": 832,
+        "diversity": {
+          "distinct_1": 0.8636,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 22
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 115
+        }
+      }
+    },
+    {
+      "id": 7,
+      "category": "Character Introduction",
+      "prompt": "Captain Oliver stood on the deck of his wooden sailboat and adjusted his brass telescope, wondering",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " and said, \"I am fun to be not so careful. You are a tree! We are scared. Can we get the dog, it is my bad of you!\"\n\nThe mom smiled and started to do that she had to see the",
+        "runtime_ms": 1488,
+        "diversity": {
+          "distinct_1": 0.8049,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 41
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 172
+        }
+      },
+      "v3": {
+        "generated_text": " how to sail. The anchor was very happy and he kept walking until he got to a lake. He was amazed by what he saw! He decided to dive on the boat. He used the net to push the boat into the water. But the",
+        "runtime_ms": 1528,
+        "diversity": {
+          "distinct_1": 0.6667,
+          "distinct_2": 0.9773,
+          "repetition_4": 0.0,
+          "word_count": 45
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 201
+        }
+      }
+    },
+    {
+      "id": 8,
+      "category": "Character Introduction",
+      "prompt": "Zara was the most curious rabbit in the meadow, never satisfied with ordinary carrot patches when",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " she had fun.\n\nBut they said, \"We are my car. But the best is your friends,\" Ben asked. He was so happy and gave it to be very very too. She wanted to make a small room.\n\n\"",
+        "runtime_ms": 1473,
+        "diversity": {
+          "distinct_1": 0.8947,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 38
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": true,
+          "char_length": 171
+        }
+      },
+      "v3": {
+        "generated_text": " you run away.\" The moral of the story is that sometimes you need to be careful, even if you are afraid of your own things, and that we should always take care of you.",
+        "runtime_ms": 1215,
+        "diversity": {
+          "distinct_1": 0.7941,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 34
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 166
+        }
+      }
+    },
+    {
+      "id": 9,
+      "category": "Action & Adventure",
+      "prompt": "The wind howled through the cave entrance as Tim grabbed his wooden staff and took",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " her happy. He was scared and asked, \"€ We are my old. I do we can make the story?\" Lily said.\n\nThe bird says, \"You't be very very prouds.\"\n\nSo that she said, \"",
+        "runtime_ms": 1644,
+        "diversity": {
+          "distinct_1": 0.8824,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 34
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": true,
+          "char_length": 159
+        }
+      },
+      "v3": {
+        "generated_text": " it away. Tom and Amy were very happy and had lots of fun together.",
+        "runtime_ms": 601,
+        "diversity": {
+          "distinct_1": 0.9286,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 14
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 66
+        }
+      }
+    },
+    {
+      "id": 10,
+      "category": "Action & Adventure",
+      "prompt": "Suddenly the rope bridge swung wildly from side to side over the roaring river below, and",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " had the ground.",
+        "runtime_ms": 197,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 15
+        }
+      },
+      "v3": {
+        "generated_text": " then he jumped back, leaving the lake and having a wonderful time. The man was so proud of himself for completing his adventure. He had been brave enough to go back to the lake, but he never forgot the wonderful times he had been in",
+        "runtime_ms": 1798,
+        "diversity": {
+          "distinct_1": 0.7333,
+          "distinct_2": 0.9318,
+          "repetition_4": 0.0,
+          "word_count": 45
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 232
+        }
+      }
+    },
+    {
+      "id": 11,
+      "category": "Action & Adventure",
+      "prompt": "The little red dragon leaped from the highest rock and flapped his tiny wings as fast as",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " she had fun.\n\nBut they said, \"We are my car. But the best is your friends,\" Ben asked. He was so happy and gave it to be very very too. She wanted to make a small room.\n\n\"",
+        "runtime_ms": 1462,
+        "diversity": {
+          "distinct_1": 0.8947,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 38
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": true,
+          "char_length": 171
+        }
+      },
+      "v3": {
+        "generated_text": " he could. He was very excited to play with the missile and make it go down. When he got to the top, he saw a big tree with lots of leaves. The bird was so happy to see him, but it was too late.",
+        "runtime_ms": 1607,
+        "diversity": {
+          "distinct_1": 0.75,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 44
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 193
+        }
+      }
+    },
+    {
+      "id": 12,
+      "category": "Action & Adventure",
+      "prompt": "When the mysterious trapdoor popped open in the library attic, Lucas shone his flashlight down into",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " the old room.",
+        "runtime_ms": 153,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 13
+        }
+      },
+      "v3": {
+        "generated_text": " the sky and started to applaud. Ped was so thankful that it had found the best present ever.",
+        "runtime_ms": 711,
+        "diversity": {
+          "distinct_1": 0.9444,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 18
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 92
+        }
+      }
+    },
+    {
+      "id": 13,
+      "category": "Dialogue Continuation",
+      "prompt": "\"Please don't go into the dark cellar,\" whispered Mia. But Leo smiled and replied,",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " \"€œBut, Lily's nice. I can eat you are you.âI will have her friend,\" Lily said, \"I want to make your other man!\"\n\nThe little girl said he went to the ground and said, \"",
+        "runtime_ms": 1586,
+        "diversity": {
+          "distinct_1": 0.8529,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 34
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 168
+        }
+      },
+      "v3": {
+        "generated_text": " \"Yes, I want to see what it is for!\" Mia smiled and said, \"That's right, Jake. Let's go and have some fun together.\" They hugged and they started to explore the woods together. They laughed and had fun,",
+        "runtime_ms": 1711,
+        "diversity": {
+          "distinct_1": 0.7895,
+          "distinct_2": 0.973,
+          "repetition_4": 0.0,
+          "word_count": 38
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 2,
+          "consecutive_duplicate_word": false,
+          "char_length": 202
+        }
+      }
+    },
+    {
+      "id": 14,
+      "category": "Dialogue Continuation",
+      "prompt": "\"Did you see that shining light over the lake?\" asked the fox. The owl blinked slowly and said,",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " \"€œBut, Lily's great, I can know you have to be good, but I will want that they are so friends!\n\nThey both had a big and said, \"Yes, but you't take some fun. You want",
+        "runtime_ms": 1657,
+        "diversity": {
+          "distinct_1": 0.8571,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 35
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 2,
+          "consecutive_duplicate_word": false,
+          "char_length": 166
+        }
+      },
+      "v3": {
+        "generated_text": " \"Yes, I could keep you safe. It's important to stay away from the bird.\" The frog smiled and thanked the bird. The bird flew away happily, feeling happy and safe.",
+        "runtime_ms": 1255,
+        "diversity": {
+          "distinct_1": 0.7333,
+          "distinct_2": 0.8966,
+          "repetition_4": 0.0,
+          "word_count": 30
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 162
+        }
+      }
+    },
+    {
+      "id": 15,
+      "category": "Dialogue Continuation",
+      "prompt": "\"I promise I will return before sunset,\" said Ella, tying her shoelaces. Her mother nodded gently and warned,",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " but he felt happy. They started to her friend. She saw the other time, the bear was very happy that they started to go.\n\nLily thought and said, \"I can you help I need to play.\" He's mom smiled.",
+        "runtime_ms": 1742,
+        "diversity": {
+          "distinct_1": 0.8205,
+          "distinct_2": 0.9474,
+          "repetition_4": 0.0,
+          "word_count": 39
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 193
+        }
+      },
+      "v3": {
+        "generated_text": " \"It's ok, sweetheart. Let's go see if we can get a better hug.\" So they went off to find a new friend. They hugged each other and went back to playing in the park.",
+        "runtime_ms": 1457,
+        "diversity": {
+          "distinct_1": 0.8824,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 34
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 163
+        }
+      }
+    },
+    {
+      "id": 16,
+      "category": "Dialogue Continuation",
+      "prompt": "\"Where did all the chocolate cookies go?\" shouted Dad with a suspicious frown. Sammy giggled and confessed,",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " but he felt happy. They started to her friend. She saw the other time, the bear was very happy that they started to go.\n\nLily thought and said, \"I can you help I need to play.\" He's mom smiled.",
+        "runtime_ms": 1781,
+        "diversity": {
+          "distinct_1": 0.8205,
+          "distinct_2": 0.9474,
+          "repetition_4": 0.0,
+          "word_count": 39
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 193
+        }
+      },
+      "v3": {
+        "generated_text": " \"It's just a piece of sour ice cream. Let's try it.\" So, they took the ice cream into their family and the little boy's ice cream shop. The little boy was so happy that he had helped his mom. He was",
+        "runtime_ms": 1826,
+        "diversity": {
+          "distinct_1": 0.7561,
+          "distinct_2": 0.925,
+          "repetition_4": 0.0,
+          "word_count": 41
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 198
+        }
+      }
+    },
+    {
+      "id": 17,
+      "category": "Moral & Lesson",
+      "prompt": "Even though Peter really wanted to keep the shiny coin he found on the street, he decided to",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " get the door.",
+        "runtime_ms": 184,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 13
+        }
+      },
+      "v3": {
+        "generated_text": " stay in his backyard. But when he looked around, he saw that the ball was so dirty. He had taken it away and was so happy to have found it. He said, \"I'm sorry I didn't hurt my car. You can",
+        "runtime_ms": 1720,
+        "diversity": {
+          "distinct_1": 0.8537,
+          "distinct_2": 0.975,
+          "repetition_4": 0.0,
+          "word_count": 41
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 189
+        }
+      }
+    },
+    {
+      "id": 18,
+      "category": "Moral & Lesson",
+      "prompt": "After laughing at his little sister when she dropped her ice cream cone, Ben realized",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " her mom went for a bit and they said, \"We are nice. He is a great girl.\"\n\nSo she was so happy. She felt angry and it was to the new friends. The mommy smiled and made his happy. They said",
+        "runtime_ms": 1615,
+        "diversity": {
+          "distinct_1": 0.7561,
+          "distinct_2": 0.975,
+          "repetition_4": 0.0,
+          "word_count": 41
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 187
+        }
+      },
+      "v3": {
+        "generated_text": " that it was an old freezer and that he could have been very sick. The end.",
+        "runtime_ms": 638,
+        "diversity": {
+          "distinct_1": 0.9375,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 16
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 74
+        }
+      }
+    },
+    {
+      "id": 19,
+      "category": "Moral & Lesson",
+      "prompt": "Working together to build the treehouse was harder than doing it alone, but when the roof was finished they discovered",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " the old cat.",
+        "runtime_ms": 155,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 12
+        }
+      },
+      "v3": {
+        "generated_text": " that it was still a giant spot in the castle. Everyone cheered for the bird and the lion was happy to see them again. The little girl smiled and waved goodbye to the bird. She had been so brave and could fly again, and she was",
+        "runtime_ms": 1605,
+        "diversity": {
+          "distinct_1": 0.7174,
+          "distinct_2": 0.9778,
+          "repetition_4": 0.0,
+          "word_count": 46
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 226
+        }
+      }
+    },
+    {
+      "id": 20,
+      "category": "Moral & Lesson",
+      "prompt": "Greedy monkey Bob hid all the ripe mangoes for himself, but when rain came he learned that",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " she had fun.\n\nBut they said, \"We are my car. But the best is your friends,\" Ben asked. He was so happy and gave it to be very very too. She wanted to make a small room.\n\n\"",
+        "runtime_ms": 1766,
+        "diversity": {
+          "distinct_1": 0.8947,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 38
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": true,
+          "char_length": 171
+        }
+      },
+      "v3": {
+        "generated_text": " it was important to be honest and respectful. He learned that sometimes things can be different, like that you have done something special.",
+        "runtime_ms": 906,
+        "diversity": {
+          "distinct_1": 0.913,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 23
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 2,
+          "consecutive_duplicate_word": false,
+          "char_length": 139
+        }
+      }
+    },
+    {
+      "id": 21,
+      "category": "Emotional Shift",
+      "prompt": "At first, little Emma was terrified of the dark bedroom shadows, but when she hugged her teddy bear she suddenly",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " of the ground.",
+        "runtime_ms": 202,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 14
+        }
+      },
+      "v3": {
+        "generated_text": " realized that she had to leave her head. She was scared and cried for help. The bunny ran away, leaving Lola alone. She was so scared that she started to cry.",
+        "runtime_ms": 1313,
+        "diversity": {
+          "distinct_1": 0.7742,
+          "distinct_2": 0.9333,
+          "repetition_4": 0.0,
+          "word_count": 31
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 158
+        }
+      }
+    },
+    {
+      "id": 22,
+      "category": "Emotional Shift",
+      "prompt": "Everyone laughed with excitement during the celebration until a sudden loud knock on the door made the room",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": ".\n\nLily was scared and asked. He had never fun so happy, they said to help you. That is very happy.",
+        "runtime_ms": 1014,
+        "diversity": {
+          "distinct_1": 0.9524,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 21
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 99
+        }
+      },
+      "v3": {
+        "generated_text": " stop. It was a huge fire! The truck was getting closer and closer. It was going to get the oil from the truck. The little girl ran after it, but the girl was too fast. She tried to move her hands, but the",
+        "runtime_ms": 1592,
+        "diversity": {
+          "distinct_1": 0.6512,
+          "distinct_2": 0.9286,
+          "repetition_4": 0.0,
+          "word_count": 43
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 204
+        }
+      }
+    },
+    {
+      "id": 23,
+      "category": "Emotional Shift",
+      "prompt": "Toby felt heartbroken when his toy airplane snapped in half, but his grandfather smiled warmly and",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " asked the ground.",
+        "runtime_ms": 161,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 17
+        }
+      },
+      "v3": {
+        "generated_text": " said, \"It's alright. Let's go back home and explore the world.\"",
+        "runtime_ms": 526,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 11
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 63
+        }
+      }
+    },
+    {
+      "id": 24,
+      "category": "Emotional Shift",
+      "prompt": "The puppy was trembling under the porch after the thunderstorm, but when gentle hands offered warm milk he",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " went to do the big voice. She was so happy to see her time, she said that she felt very proud of him.\n\n\"Yes, Lily, I can be so too. You are better!\"\n\nHe saw a man.",
+        "runtime_ms": 1526,
+        "diversity": {
+          "distinct_1": 0.8919,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 37
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 163
+        }
+      },
+      "v3": {
+        "generated_text": " would get closer to the vet. He was so happy that he jumped up and down, wagging his tail. After that, the cat and the cat became best friends. They would play together and have fun together.",
+        "runtime_ms": 1368,
+        "diversity": {
+          "distinct_1": 0.7568,
+          "distinct_2": 0.9722,
+          "repetition_4": 0.0,
+          "word_count": 37
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 191
+        }
+      }
+    },
+    {
+      "id": 25,
+      "category": "Unseen Modern Concepts",
+      "prompt": "Maya sat down at her computer laptop to design a robotic helper that could sort recycled plastics, but",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " she had fun.",
+        "runtime_ms": 152,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 12
+        }
+      },
+      "v3": {
+        "generated_text": " she could also take a bite of it. She was very excited and asked, \"What are you doing?\" Mommy replied, \"I'm going to teach me how to use the puzzle to make you happy.\" Lily was very proud of her work.",
+        "runtime_ms": 1652,
+        "diversity": {
+          "distinct_1": 0.8293,
+          "distinct_2": 0.975,
+          "repetition_4": 0.0,
+          "word_count": 41
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 1,
+          "consecutive_duplicate_word": false,
+          "char_length": 200
+        }
+      }
+    },
+    {
+      "id": 26,
+      "category": "Unseen Modern Concepts",
+      "prompt": "The solar-powered drone buzzed gently above the vegetable garden, scanning each tomato plant until",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " she had back in the lake. She was so happy to see her time, she was sad and smiled. They thought that he could the mom saw it for a big boy.",
+        "runtime_ms": 1446,
+        "diversity": {
+          "distinct_1": 0.875,
+          "distinct_2": 0.9677,
+          "repetition_4": 0.0,
+          "word_count": 32
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 140
+        }
+      },
+      "v3": {
+        "generated_text": " it was gone. The hive was full of joy and laughter. And they all lived happily ever after.",
+        "runtime_ms": 853,
+        "diversity": {
+          "distinct_1": 0.8889,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 18
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 90
+        }
+      }
+    },
+    {
+      "id": 27,
+      "category": "Unseen Modern Concepts",
+      "prompt": "When the Wi-Fi signal vanished in the middle of their online game, the three friends decided to",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " get the door.",
+        "runtime_ms": 194,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 13
+        }
+      },
+      "v3": {
+        "generated_text": " stay there forever. The creature said that the world was important to keep them safe and to stay safe. The End.",
+        "runtime_ms": 791,
+        "diversity": {
+          "distinct_1": 0.7619,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 21
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 111
+        }
+      }
+    },
+    {
+      "id": 28,
+      "category": "Rare Names & Creative Settings",
+      "prompt": "High upon the floating crystal islands of Zephyria, a young apprentice named Aethelgard discovered",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " the old room.",
+        "runtime_ms": 118,
+        "diversity": {
+          "distinct_1": 1.0,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 3
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 13
+        }
+      },
+      "v3": {
+        "generated_text": " a new part of the meadow. The other animals were amazed at how much they had to keep their life as possible as they could.",
+        "runtime_ms": 618,
+        "diversity": {
+          "distinct_1": 0.88,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 25
+        },
+        "heuristics": {
+          "ends_with_punctuation": true,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 122
+        }
+      }
+    },
+    {
+      "id": 29,
+      "category": "Rare Names & Creative Settings",
+      "prompt": "Deep underwater in the luminous coral dome of Thalassia, princess Nerida found a strange glowing locket that",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " said, \"Yes, this is too. I can know you are you. 'I will have it to come away.\"\n\n\"€œMom,\" she had to the big man. She had fun in the ground and said, \"I",
+        "runtime_ms": 1014,
+        "diversity": {
+          "distinct_1": 0.7647,
+          "distinct_2": 0.9697,
+          "repetition_4": 0.0,
+          "word_count": 34
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 152
+        }
+      },
+      "v3": {
+        "generated_text": " looked like the star. Daisy was very happy and she opened her diary and saw that the message was actually a secret - she had never seen it before. It was a beautiful story! The princess was so proud of herself for finding the magical gift,",
+        "runtime_ms": 1005,
+        "diversity": {
+          "distinct_1": 0.7826,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 46
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 2,
+          "consecutive_duplicate_word": false,
+          "char_length": 239
+        }
+      }
+    },
+    {
+      "id": 30,
+      "category": "Rare Names & Creative Settings",
+      "prompt": "In the bioluminescent hollow of Quenxar, an inquisitive badger named Vesper searched for",
+      "settings": {
+        "max_new_tokens": 50,
+        "temperature": 0.75,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "seed": 42
+      },
+      "v2": {
+        "generated_text": " her. She wanted to keep her friends.\n\nShe went around the man and the bear was happy. It would get a big, and mom she couldn't want to be so happy. She had Ben for the ground to not play with the",
+        "runtime_ms": 1011,
+        "diversity": {
+          "distinct_1": 0.7381,
+          "distinct_2": 1.0,
+          "repetition_4": 0.0,
+          "word_count": 42
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 195
+        }
+      },
+      "v3": {
+        "generated_text": " them. Then, a mischievous bear flew out of the shadows and landed on the ground, leaving the owl on the porch. The fairy was so surprised that she ran away and told the bee that she had seen it. She told her mom what had",
+        "runtime_ms": 1130,
+        "diversity": {
+          "distinct_1": 0.7333,
+          "distinct_2": 0.9545,
+          "repetition_4": 0.0,
+          "word_count": 45
+        },
+        "heuristics": {
+          "ends_with_punctuation": false,
+          "prompt_word_overlap_count": 0,
+          "consecutive_duplicate_word": false,
+          "char_length": 220
+        }
+      }
+    }
+  ]
+}
