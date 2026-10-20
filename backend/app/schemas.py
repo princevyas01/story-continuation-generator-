@@ -11,6 +11,7 @@ class GenerateRequest(BaseModel):
     top_p: Optional[float] = Field(default=0.90, ge=0.0, le=1.0, description="Nucleus sampling threshold")
     repetition_penalty: Optional[float] = Field(default=1.15, ge=1.0, le=3.0, description="Repetition penalty")
     seed: Optional[int] = Field(default=None, description="Optional random seed for reproducible sampling")
+    model_version: Optional[str] = Field(default=None, description="Optional model version ('v2' or 'v3')")
 
     @field_validator("prompt")
     @classmethod
@@ -27,6 +28,7 @@ class GenerationSettings(BaseModel):
     top_p: Optional[float] = None
     repetition_penalty: Optional[float] = 1.15
     seed: Optional[int] = None
+    model_version: Optional[str] = None
 
 class GenerateResponse(BaseModel):
     prompt: str
@@ -58,6 +60,8 @@ class ModelStatusResponse(BaseModel):
     device: str
     parameters_count: Optional[int] = None
     tokenizer_type: Optional[str] = None
+    active_version: Optional[str] = None
+    available_versions: Optional[List[str]] = None
 
 class ModelMetricsResponse(BaseModel):
     status: str
