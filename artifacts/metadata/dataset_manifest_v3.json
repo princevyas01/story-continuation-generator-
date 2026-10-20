@@ -1,0 +1,14 @@
+{
+  "dataset_name": "roneneldan/TinyStories",
+  "dataset_split": "train",
+  "source_card_license": "CDLA-Sharing-1.0; review source terms before redistribution",
+  "stories_selected": 50000,
+  "requested_max_stories": 50000,
+  "source_rows_read": 50445,
+  "shuffle_buffer": 20000,
+  "sampling_method": "Hugging Face streaming shuffle with bounded buffer, deterministic seed, exact deduplication",
+  "seed": 42,
+  "min_story_chars": 30,
+  "max_story_chars": 15000,
+  "selected_utc": "2026-10-20T13:14:09.686727+00:00"
+}
