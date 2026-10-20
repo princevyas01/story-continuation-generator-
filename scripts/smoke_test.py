@@ -87,7 +87,8 @@ def run_smoke_test():
             max_new_tokens=15,
             temperature=0.8,
             top_k=5,
-            top_p=0.9
+            top_p=0.9,
+            seed=42
         )
         assert result["tokens_generated"] > 0, "No tokens generated"
         print(f"[PASS] Autoregressive generation verified. Prompt: '{result['prompt']}' -> Story: '{result['full_story']}'")
