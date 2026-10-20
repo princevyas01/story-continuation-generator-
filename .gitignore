@@ -46,3 +46,6 @@ dist/
 
 # Archives
 *.zip
+
+# Temporary staging
+staging_v3/
