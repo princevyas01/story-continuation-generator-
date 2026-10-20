@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "source_sha256": "618d76b2f716b2d71b142efffdb52815af581c8020602401858436a1d4ab7dbe",
+  "split_policy": "90/5/5 document-level split before windowing",
+  "train_stories": 45000,
+  "validation_stories": 2500,
+  "test_stories": 2500,
+  "exact_document_overlap": 0
+}
