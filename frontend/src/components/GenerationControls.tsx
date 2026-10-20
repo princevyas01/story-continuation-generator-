@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sliders, Zap } from 'lucide-react';
+import { Sliders, Zap, Layers } from 'lucide-react';
 import { GenerationSettings } from '../types';
 
 interface GenerationControlsProps {
@@ -31,6 +31,8 @@ export const GenerationControls: React.FC<GenerationControlsProps> = ({
     }
   };
 
+  const isV3 = settings.model_version === 'v3';
+
   return (
     <div className="card">
       <div className="card-title">
@@ -39,6 +41,51 @@ export const GenerationControls: React.FC<GenerationControlsProps> = ({
           Sampling Hyperparameters
         </span>
         <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Autoregressive LSTM</span>
+      </div>
+
+      {/* Model Selector Toggle */}
+      <div className="control-group" style={{ marginBottom: '1.25rem' }}>
+        <div className="control-header">
+          <span className="control-label" style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+            <Layers size={14} color="#38bdf8" />
+            Model Version
+          </span>
+          <span className="control-value" style={{ color: isV3 ? '#38bdf8' : '#a78bfa' }}>
+            {isV3 ? 'v3 Candidate (Colab)' : 'v2 Baseline'}
+          </span>
+        </div>
+        <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
+          <button
+            type="button"
+            className="preset-chip"
+            style={{
+              flex: 1,
+              textAlign: 'center',
+              border: !isV3 ? '1px solid #818cf8' : '1px solid transparent',
+              background: !isV3 ? 'rgba(129, 140, 248, 0.15)' : undefined,
+              color: !isV3 ? '#fff' : '#94a3b8',
+            }}
+            disabled={disabled}
+            onClick={() => setSettings((s) => ({ ...s, model_version: 'v2' }))}
+          >
+            v2 Baseline
+          </button>
+          <button
+            type="button"
+            className="preset-chip"
+            style={{
+              flex: 1,
+              textAlign: 'center',
+              border: isV3 ? '1px solid #38bdf8' : '1px solid transparent',
+              background: isV3 ? 'rgba(56, 189, 248, 0.15)' : undefined,
+              color: isV3 ? '#fff' : '#94a3b8',
+            }}
+            disabled={disabled}
+            onClick={() => setSettings((s) => ({ ...s, model_version: 'v3' }))}
+          >
+            v3 Candidate
+          </button>
+        </div>
       </div>
 
       {/* Preset Buttons */}
@@ -87,13 +134,13 @@ export const GenerationControls: React.FC<GenerationControlsProps> = ({
             setSettings((s) => ({ ...s, max_new_tokens: Number(e.target.value) }))
           }
         />
-        <div className="control-hint">Words to generate following the prompt</div>
+        <div className="control-hint">Subwords to generate following the prompt</div>
       </div>
 
       {/* Temperature Slider */}
       <div className="control-group">
         <div className="control-header">
-          <span className="control-label">Temperature (\(T\))</span>
+          <span className="control-label">Temperature (T)</span>
           <span className="control-value">{settings.temperature.toFixed(2)}</span>
         </div>
         <input
