@@ -11,9 +11,10 @@ health_router = APIRouter(tags=["Health"])
 @health_router.get("/health", response_model=HealthResponse)
 async def get_health():
     """Process health and readiness check."""
+    active_version = model_service.get_status().get("version", settings.VERSION)
     return HealthResponse(
         status="healthy" if model_service.is_loaded else "degraded",
         timestamp=datetime.datetime.now(datetime.timezone.utc).isoformat(),
         model_loaded=model_service.is_loaded,
-        version=settings.VERSION
+        version=active_version
     )
