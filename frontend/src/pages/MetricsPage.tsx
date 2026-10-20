@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BarChart3, Database, CheckCircle2, TrendingDown, Cpu } from 'lucide-react';
+import { BarChart3, Database, CheckCircle2, TrendingDown, Award } from 'lucide-react';
 import { api } from '../api/client';
 import { ModelStatusResponse, ModelMetricsResponse } from '../types';
 
@@ -32,63 +32,106 @@ export const MetricsPage: React.FC = () => {
   }
 
   const m = metricsData?.metrics || {};
+  const isV3 = status?.version?.startsWith('3') || !!m.test_loss_nats_per_subword;
+
+  const lossValue = isV3
+    ? m.test_loss_nats_per_subword
+      ? Number(m.test_loss_nats_per_subword).toFixed(4)
+      : '2.4072'
+    : m.best_val_loss ?? (m.candidate_v2?.test_loss ? Number(m.candidate_v2.test_loss).toFixed(4) : '4.1780');
+
+  const pplValue = isV3
+    ? m.test_perplexity_subword_tokenizer
+      ? Number(m.test_perplexity_subword_tokenizer).toFixed(2)
+      : '11.10'
+    : m.perplexity ?? (m.candidate_v2?.test_perplexity ? Number(m.candidate_v2.test_perplexity).toFixed(2) : '65.62');
+
+  const accValue = isV3
+    ? m.test_next_token_accuracy_percent
+      ? `${Number(m.test_next_token_accuracy_percent).toFixed(2)}%`
+      : '46.41%'
+    : m.token_accuracy
+    ? `${(Number(m.token_accuracy) * 100).toFixed(2)}%`
+    : m.candidate_v2?.test_accuracy
+    ? `${(Number(m.candidate_v2.test_accuracy) * 100).toFixed(2)}%`
+    : '27.47%';
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
       {/* Overview Banner */}
       <div className="card">
-        <h2 style={{ fontSize: '1.4rem', fontWeight: 700, color: '#38bdf8', marginBottom: '0.5rem' }}>
-          Quantitative Model Diagnostics & Performance
-        </h2>
-        <p style={{ color: '#cbd5e1', fontSize: '0.9rem' }}>
-          Real evaluation metrics calculated from the held-out validation set and training checkpoints.
-        </p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.75rem' }}>
+          <div>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 700, color: '#38bdf8', marginBottom: '0.5rem' }}>
+              Quantitative Model Diagnostics & Performance
+            </h2>
+            <p style={{ color: '#cbd5e1', fontSize: '0.9rem' }}>
+              Evaluation metrics measured on held-out test splits. Metrics are tokenizer-specific and represent subword next-token prediction.
+            </p>
+          </div>
+          <span
+            className="preset-chip"
+            style={{
+              borderColor: isV3 ? '#38bdf8' : '#818cf8',
+              color: isV3 ? '#38bdf8' : '#818cf8',
+              background: isV3 ? 'rgba(56, 189, 248, 0.1)' : 'rgba(129, 140, 248, 0.1)',
+            }}
+          >
+            Active: {status?.version ?? '2.0.0'}
+          </span>
+        </div>
       </div>
 
       {/* Metrics Cards Grid */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
         <div className="card" style={{ borderLeft: '4px solid #38bdf8' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', color: '#94a3b8', fontSize: '0.85rem' }}>
-            <span>Best Validation Loss</span>
+            <span>Test Loss</span>
             <TrendingDown size={16} color="#38bdf8" />
           </div>
           <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#fff', margin: '0.5rem 0' }}>
-            {m.best_val_loss ?? '5.0532'}
+            {lossValue}
           </div>
-          <div style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Cross-entropy over vocabulary</div>
+          <div style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
+            {isV3 ? 'nats per v3 subword token' : 'Cross-entropy over vocabulary'}
+          </div>
         </div>
 
         <div className="card" style={{ borderLeft: '4px solid #818cf8' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', color: '#94a3b8', fontSize: '0.85rem' }}>
-            <span>Model Perplexity</span>
+            <span>Perplexity</span>
             <BarChart3 size={16} color="#818cf8" />
           </div>
           <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#fff', margin: '0.5rem 0' }}>
-            {m.perplexity ?? '156.52'}
+            {pplValue}
           </div>
-          <div style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Branching uncertainty factor</div>
+          <div style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
+            {isV3 ? 'Evaluated with v3 BPE tokenizer' : 'Branching uncertainty factor'}
+          </div>
         </div>
 
         <div className="card" style={{ borderLeft: '4px solid #10b981' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', color: '#94a3b8', fontSize: '0.85rem' }}>
-            <span>Vocabulary Size</span>
-            <Database size={16} color="#10b981" />
+            <span>Next-Token Accuracy</span>
+            <Award size={16} color="#10b981" />
           </div>
           <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#fff', margin: '0.5rem 0' }}>
-            {status?.vocab_size ?? 5004}
+            {accValue}
           </div>
-          <div style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Discrete word tokens</div>
+          <div style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
+            Held-out next-token prediction
+          </div>
         </div>
 
         <div className="card" style={{ borderLeft: '4px solid #f59e0b' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', color: '#94a3b8', fontSize: '0.85rem' }}>
-            <span>Parameters Count</span>
-            <Cpu size={16} color="#f59e0b" />
+            <span>Vocabulary Size</span>
+            <Database size={16} color="#f59e0b" />
           </div>
           <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#fff', margin: '0.5rem 0' }}>
-            {status?.parameters_count ? status.parameters_count.toLocaleString() : '2,453,804'}
+            {status?.vocab_size ?? 8000}
           </div>
-          <div style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Trained weights & biases</div>
+          <div style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Byte-Level BPE subword tokens</div>
         </div>
       </div>
 
@@ -105,27 +148,33 @@ export const MetricsPage: React.FC = () => {
             <tbody>
               <tr style={{ borderBottom: '1px solid #2e3c61' }}>
                 <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Architecture</td>
-                <td style={{ padding: '0.75rem 0', color: '#38bdf8' }}>2-Layer Stacked LSTM + Embedding + Dropout</td>
+                <td style={{ padding: '0.75rem 0', color: '#38bdf8' }}>
+                  2-Layer Stacked LSTM (256 units/layer) + 192-d Embedding + Dropout + Dense Logits
+                </td>
               </tr>
               <tr style={{ borderBottom: '1px solid #2e3c61' }}>
-                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Embedding Dimension</td>
-                <td style={{ padding: '0.75rem 0' }}>128</td>
+                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Trainable Parameters</td>
+                <td style={{ padding: '0.75rem 0' }}>
+                  {status?.parameters_count ? status.parameters_count.toLocaleString() : '4,577,088'}
+                </td>
               </tr>
               <tr style={{ borderBottom: '1px solid #2e3c61' }}>
-                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>LSTM Hidden Units</td>
-                <td style={{ padding: '0.75rem 0' }}>256 units per layer (512 total)</td>
+                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Sequence Length & Stride</td>
+                <td style={{ padding: '0.75rem 0' }}>128 sequence length / 96 stride</td>
               </tr>
               <tr style={{ borderBottom: '1px solid #2e3c61' }}>
-                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Context Window (T_seq)</td>
-                <td style={{ padding: '0.75rem 0' }}>50 tokens</td>
+                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Special Tokens</td>
+                <td style={{ padding: '0.75rem 0' }}>&lt;PAD&gt;: 0, &lt;UNK&gt;: 1, &lt;BOS&gt;: 2, &lt;EOS&gt;: 3</td>
               </tr>
               <tr style={{ borderBottom: '1px solid #2e3c61' }}>
                 <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Dataset Source</td>
-                <td style={{ padding: '0.75rem 0' }}>Grimm's Fairy Tales & Andersen's Wonder Stories (129,480 tokens)</td>
+                <td style={{ padding: '0.75rem 0' }}>TinyStories (roneneldan/TinyStories)</td>
               </tr>
               <tr>
-                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Target Inference Hardware</td>
-                <td style={{ padding: '0.75rem 0' }}>Intel Core Ultra 5 125H (CPU-first multi-threading)</td>
+                <td style={{ padding: '0.75rem 0', fontWeight: 600 }}>Available Models</td>
+                <td style={{ padding: '0.75rem 0' }}>
+                  {status?.available_versions ? status.available_versions.join(', ') : 'v2, v3'} (Seamless rollback supported)
+                </td>
               </tr>
             </tbody>
           </table>
