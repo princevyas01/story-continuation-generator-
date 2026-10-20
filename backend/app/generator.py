@@ -1,13 +1,14 @@
-"""High-performance generation engine for autoregressive Story LSTM (v1 & v2).
+"""High-performance generation engine for autoregressive Story LSTM (v1, v2, & v3).
 
 Features:
 - Numerically stable logit-space temperature scaling
-- Logit-space repetition penalty (Keskar et al.)
+- Logit-space repetition penalty (Keskar et al.) with special-token protection
 - Top-K truncation
 - Descending cumulative Nucleus (Top-P) sampling
-- Zero emission of PAD/BOS tokens
+- Zero emission of PAD/BOS/UNK tokens
 - Immediate stopping on EOS
-- Native support for both SubwordStoryTokenizer (v2) and StoryTokenizer (v1)
+- Native support for Story LSTM v3 (logits output, right-padding, last_valid_position tracking)
+- Native support for SubwordStoryTokenizer (v2/v3) and StoryTokenizer (v1)
 """
 
 import time
@@ -43,17 +44,19 @@ def sample_next_token(
         p = np.array(logits_or_probs, dtype=np.float64)
         logits = np.log(np.maximum(p, eps))
 
-    # 1. Ban specified special tokens (e.g., PAD, BOS)
+    # 1. Ban specified special tokens (e.g., PAD, BOS, UNK)
     if banned_token_ids:
         for b_id in banned_token_ids:
             if 0 <= b_id < len(logits):
                 logits[b_id] = -np.inf
 
-    # 2. Apply Repetition Penalty in Logit Space
+    # 2. Apply Repetition Penalty in Logit Space (skipping banned tokens)
     if repetition_penalty != 1.0 and generated_token_ids:
         recent_ids = generated_token_ids[-40:]
         for t_id in set(recent_ids):
             if 0 <= t_id < len(logits):
+                if banned_token_ids and t_id in banned_token_ids:
+                    continue
                 if logits[t_id] > 0:
                     logits[t_id] /= float(repetition_penalty)
                 else:
@@ -68,7 +71,6 @@ def sample_next_token(
 
     # 5. Top-K filtering
     if 0 < top_k < len(scaled_logits):
-        # Keep only top_k highest values; set others to -inf
         kth_val = np.partition(scaled_logits, -top_k)[-top_k]
         scaled_logits[scaled_logits < kth_val] = -np.inf
 
@@ -121,8 +123,14 @@ def run_generation(
     repetition_penalty: float = 1.15,
     seed: Optional[int] = None,
     seq_len: int = 128,
+    model_version: str = "v3",
 ) -> Tuple[str, int]:
     """Execute autoregressive generation loop.
+    
+    Supports:
+    - v3 Candidate: Right-padded input window, last-valid token position indexing, raw logits.
+    - v2 Baseline: Left-padded input window, last timestep indexing, raw logits.
+    - v1 Legacy: Word-level left-padded window, softmax probabilities.
     
     Returns (generated_continuation_text, runtime_ms).
     """
@@ -136,32 +144,41 @@ def run_generation(
         model._predict_step = tf.function(lambda x: model(x, training=False), reduce_retracing=True)
     predict_fn = model._predict_step
 
+    norm_version = str(model_version).lower().strip()
+    is_v3 = norm_version.startswith("3") or "v3" in norm_version or "colab" in norm_version
+
     if is_subword:
-        # v2 Subword Generation
         token_ids = tokenizer.encode(prompt, add_special_tokens=False)
+        
+        # For an empty prompt, use BOS token as required by protocol
         if not token_ids:
-            token_ids = tokenizer.encode("Once upon a time", add_special_tokens=False)
+            token_ids = [tokenizer.bos_token_id]
 
         current_input = list(token_ids)
         generated_ids: List[int] = []
         banned = {tokenizer.pad_token_id, tokenizer.bos_token_id, tokenizer.unk_token_id}
 
         for _ in range(max_new_tokens):
-            # Window to last seq_len tokens with left-padding if shorter
             window = current_input[-seq_len:]
-            if len(window) < seq_len:
-                window = [tokenizer.pad_token_id] * (seq_len - len(window)) + window
-            x = np.array([window], dtype=np.int32)
-            
-            # Fast graph prediction
-            pred = predict_fn(x)
-            pred_arr = pred.numpy()
-            
-            # If 3D (batch, time, vocab), take the last timestep
-            if pred_arr.ndim == 3:
-                step_logits = pred_arr[0, -1, :]
+
+            if is_v3:
+                # v3 Convention: Right-padded window with PAD_ID=0, sample at last valid position
+                arr = np.full((1, seq_len), tokenizer.pad_token_id, dtype=np.int32)
+                arr[0, :len(window)] = window
+                last_valid = len(window) - 1
+                
+                pred = predict_fn(arr)
+                pred_arr = pred.numpy()
+                step_logits = pred_arr[0, last_valid, :] if pred_arr.ndim == 3 else pred_arr[0]
             else:
-                step_logits = pred_arr[0]
+                # v2 Convention: Left-padded window, sample at final timestep
+                if len(window) < seq_len:
+                    window = [tokenizer.pad_token_id] * (seq_len - len(window)) + window
+                x = np.array([window], dtype=np.int32)
+                
+                pred = predict_fn(x)
+                pred_arr = pred.numpy()
+                step_logits = pred_arr[0, -1, :] if pred_arr.ndim == 3 else pred_arr[0]
 
             next_id = sample_next_token(
                 logits_or_probs=step_logits,
@@ -175,7 +192,7 @@ def run_generation(
                 rng=rng,
             )
 
-            # Check for EOS
+            # Check for EOS termination
             if next_id == tokenizer.eos_token_id:
                 break
 
