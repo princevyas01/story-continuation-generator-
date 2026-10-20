@@ -1,0 +1,54 @@
+{
+  "model_version": "story-lstm-v3-colab",
+  "architecture": "Embedding -> LSTM(256, return_sequences=True) -> Dropout -> LSTM(256, return_sequences=True) -> Dropout -> Dense raw logits",
+  "trainable_parameters": 4577088,
+  "embedding_dim": 192,
+  "lstm_units": 256,
+  "sequence_length": 128,
+  "stride": 96,
+  "vocabulary_size": 8000,
+  "special_tokens": {
+    "PAD": 0,
+    "UNK": 1,
+    "BOS": 2,
+    "EOS": 3
+  },
+  "output_semantics": "raw logits shaped [batch, sequence_length, vocabulary_size]",
+  "dataset_name": "roneneldan/TinyStories",
+  "dataset_manifest": "artifacts/metadata/dataset_manifest.json",
+  "best_epoch": 20,
+  "max_epochs_configured": 20,
+  "test_metrics": {
+    "model_version": "story-lstm-v3-colab",
+    "dataset_name": "roneneldan/TinyStories",
+    "story_counts": {
+      "seed": 42,
+      "source_sha256": "618d76b2f716b2d71b142efffdb52815af581c8020602401858436a1d4ab7dbe",
+      "split_policy": "90/5/5 document-level split before windowing",
+      "train_stories": 45000,
+      "validation_stories": 2500,
+      "test_stories": 2500,
+      "exact_document_overlap": 0
+    },
+    "window_counts": {
+      "train": 114718,
+      "validation": 6415,
+      "test": 6336
+    },
+    "test_supervised_tokens": 649094,
+    "best_epoch": 20,
+    "epochs_completed": 20,
+    "test_loss_nats_per_subword": 2.407186508178711,
+    "test_perplexity_subword_tokenizer": 11.102679861896819,
+    "test_next_token_accuracy": 0.46410226821899414,
+    "test_next_token_accuracy_percent": 46.410226821899414,
+    "tokenizer_sha256": "cec16b4905fa068b6294225066f80127bd97769ab5a898cf2108fffd9a7f0843",
+    "warning": "These are subword next-token metrics, not the percentage of generated stories that are correct. 90% accuracy is not guaranteed or a sensible acceptance criterion."
+  },
+  "tensorflow_version": "2.21.0",
+  "python_version": "3.13.15",
+  "exported_utc": "2026-10-20T14:31:58.026690+00:00",
+  "model_sha256": "a218be909eab68d1084e63a9fce60999119423d0146dccfe4e4a07f7094657e8",
+  "tokenizer_sha256": "cec16b4905fa068b6294225066f80127bd97769ab5a898cf2108fffd9a7f0843",
+  "model_tokenizer_pairing_required": true
+}
