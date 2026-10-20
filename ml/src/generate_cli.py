@@ -12,7 +12,7 @@ if sys.platform == "win32":
 # Ensure project root is in sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
-from backend.app.generator import run_generation
+from backend.app.generator import run_generation, sample_next_token
 from ml.src.model import load_trained_model
 from ml.src.subword_tokenizer import SubwordStoryTokenizer
 from ml.src.tokenizer import StoryTokenizer
