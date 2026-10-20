@@ -1,0 +1,14 @@
+{
+  "tokenizer_type": "Hugging Face tokenizers BPE with ByteLevel pre-tokenizer/decoder",
+  "requested_vocab_size": 8000,
+  "actual_vocab_size": 8000,
+  "train_split_sha256": "549a88d194d72dedc55e5fb7eeab6fcf30e8eabea6c17e9adb008c31a3bd6fc8",
+  "special_tokens": {
+    "<PAD>": 0,
+    "<UNK>": 1,
+    "<BOS>": 2,
+    "<EOS>": 3
+  },
+  "trained_on": "training split only",
+  "seed": 42
+}
